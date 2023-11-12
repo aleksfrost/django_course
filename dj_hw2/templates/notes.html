@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h4> Your notes are: </h4>
+
+    {% for note in notes %}
+
+        <p class="note"> {{ note }} </p>
+
+    {% empty %}
+
+        <p> There is no notes yet </p>
+
+    {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3> {{ message }} </h3>
+
+    <form method="POST" action=''>
+        Enter your note : <input type="text" name="note"><br><br>
+        <input type="submit" value="Submit">
+        {% csrf_token %}
+    </form>
+
+{% endblock content %}
